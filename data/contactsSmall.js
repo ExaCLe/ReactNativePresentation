@@ -1,4 +1,4 @@
-export default contacts = [
+const contacts = [
   {
     id: 1576,
     uid: "37a8b61c-bd66-46c2-9dc7-3b4402e81461",
@@ -393,3 +393,5 @@ export default contacts = [
     },
   },
 ];
+
+export default contacts;

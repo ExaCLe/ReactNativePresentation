@@ -1,11 +1,11 @@
 import { Text, Button, StyleSheet } from "react-native";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <>
-      <Text style={{ fontSize: 30 }}>Name: David Malen</Text>
+      <Text style={{ fontSize: 30 }}>Name: {props.name}</Text>
       <Text style={[styles.informationText, { color: "grey" }]}>
-        Phone Number: +01 06406364
+        Phone Number: {props.phoneNumber}
       </Text>
 
       <Button title="Call" onPress={() => alert("Calling...")} />
@@ -15,7 +15,7 @@ const Contact = () => {
 
 const styles = StyleSheet.create({
   informationText: {
-    fontSize: 20,
+    fontSize: 18,
     color: "red",
   },
 });
